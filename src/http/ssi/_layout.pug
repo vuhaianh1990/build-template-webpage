@@ -1,0 +1,40 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    block title
+      title Template
+    block description
+      meta(name='description', content='')
+    block keyword
+      meta(name='keyword', content='')
+
+
+    // Core CSS
+    link(rel="icon", href="/images/logo.ico", sizes="16x16")
+    link(href='css/bootstrap.min.css', rel='stylesheet')
+
+    // Custom styles for this template
+    link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css')
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+    link(rel='stylesheet' href='https://unpkg.com/swiper/swiper-bundle.css')
+    link(rel='stylesheet' href='https://unpkg.com/swiper/swiper-bundle.min.css')
+    link(href='css/style.css', rel='stylesheet')
+    script(src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous")
+    script(src="/js/bootstrap.min.js")
+    script(src='https://unpkg.com/swiper/swiper-bundle.js')
+    script(src='https://unpkg.com/swiper/swiper-bundle.min.js')
+    script(src='https://projects.davidlynch.org/maphilight/jquery.maphilight.min.js')
+
+    block css
+    block js
+
+  body(data-spy="scroll" data-target=".navbar" data-offset="120")
+    //- //# include file="./ssi/_header.html"
+    block header
+      include _header
+    block content
+    block footer
+      include _footer
+    block js-footer

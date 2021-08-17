@@ -1,0 +1,25 @@
+extends ssi/_layout
+
+block title
+  title HomePage | Avenue Garden
+block description
+  meta(name='description', content='')
+block keyword
+  meta(name='keyword', content='')
+
+block css
+  //- style.
+
+
+block js-footer
+  script(src="/js/script.js")
+
+block content
+  main.full-container
+    include _homepage
+    include _vitri
+    include _tienich
+    include _matbang
+    include _thuvien
+    include _tintuc
+    include _lienhe

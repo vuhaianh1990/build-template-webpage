@@ -1,0 +1,101 @@
+extends ssi/_layout
+
+block title
+  title Detail | Avenue Garden
+block description
+  meta(name='description', content='')
+block keyword
+  meta(name='keyword', content='')
+
+block css
+  //- style.
+
+
+block js-footer
+  script(src="js/script.js")
+
+block header
+  header#detail.bg-orange
+    .container
+      .row
+        .col-12
+          nav.navbar.navbar-expand-md.navbar-light
+            h1.navbar-brand
+              a(href='/'): img(src="/images/logo_orange.png", alt="Avenue Garden")
+            button.navbar-toggler(type='button' data-toggle='collapse' data-target='#nav' aria-controls='nav' aria-expanded='false' aria-label='Toggle navigation')
+              span.navbar-toggler-icon
+            #nav.collapse.navbar-collapse
+              ul.navbar-nav.ml-auto
+                li.nav-item: a.nav-link(href='/#homepage') TRANG CHỦ
+                li.nav-item: a.nav-link(href='/#vitri') VỊ TRÍ
+                li.nav-item: a.nav-link(href='/#tienich') TIỆN ÍCH
+                li.nav-item: a.nav-link(href='/#matbang') MẶT BẰNG
+                li.nav-item: a.nav-link(href='/#thuvien') THƯ VIỆN
+                li.nav-item: a.nav-link(href='/#tintuc') TIN TỨC
+                li.nav-item: a.nav-link(href='/#lienhe') LIÊN HỆ
+
+block content
+  main.full-container.bg-orange
+    section#detail
+      .container.wrap-container
+        .row.wrap-box
+          .col-sm-12.col-md-4.box__matbang
+            p.txt-head MẶT BẰNG
+            p.txt-code TT6-1
+            .box__matbang-media
+              img(src="/images/matbang2.png", alt="")
+              p VỊ TRÍ LÔ ĐẤT
+
+          .col-sm-12.col-md-7.offset-md-1
+            .swiper-detail
+              .swiper-wrapper
+                .swiper-slide
+                  img(src="/images/tongthe1.jpg", alt="")
+                .swiper-slide
+                  img(src="/images/tongthe2.jpeg", alt="")
+                .swiper-slide
+                  img(src="/images/tongthe3.jpeg", alt="")
+                .swiper-slide
+                  img(src="/images/tongthe4.jpeg", alt="")
+            .swiper-button-prev
+            .swiper-button-next
+            p PHỐI CẢNH TỔNG THỂ
+
+        .row.wrap-box2
+          .col-md-7.col-sm-12.wrap-matbang
+            .matbang__item.active
+              img(src="/images/mb_2.png", alt="")
+              p MẶT BẰNG MÁI
+            .matbang__item
+              img(src="/images/mb_3.png", alt="")
+              p MẶT BẰNG TẦNG 5
+            .matbang__item
+              img(src="/images/mb_4.png", alt="")
+              p MẶT BẰNG TẦNG 4
+            .matbang__item
+              img(src="/images/mb_2.png", alt="")
+              p MẶT BẰNG TẦNG 3
+            .matbang__item
+              img(src="/images/mb_3.png", alt="")
+              p MẶT BẰNG TẦNG 2
+            .matbang__item
+              img(src="/images/mb_4.png", alt="")
+              p MẶT BẰNG TẦNG 1
+            .matbang__item
+              img(src="/images/mb_2.png", alt="")
+              p VỈA HÈ
+          .col-md-5.col-sm-12.wrap-building
+            .building
+              img(src="/images/matbang1.jpg", alt="")
+            .appartment
+              ul.lst-appartment
+                li.active MẶT BẰNG MÁI
+                li MẶT BẰNG TẦNG 5
+                li MĂT BẰNG TẦNG 4
+                li MĂT BẰNG TẦNG 3
+                li MĂT BẰNG TẦNG 2
+                li MĂT BẰNG TẦNG 1
+                li VỈA HÈ
+
+
+    include _lienhe
